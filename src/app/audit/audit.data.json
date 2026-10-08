@@ -1,0 +1,135 @@
+{
+  "project": "Cats & Rain",
+  "status": "Scanned",
+  "labels": {
+    "other": "Empty states"
+  },
+  "skipped": [
+    {
+      "component": "src/components/ui/dropdown-menu.tsx#DropdownMenuLabel",
+      "axis": "inset",
+      "value": true,
+      "reason": "DropdownMenuLabel is never used in the app, so there is no real usage to copy"
+    },
+    {
+      "component": "src/components/ui/dropdown-menu.tsx#DropdownMenuSubTrigger",
+      "axis": "inset",
+      "value": true,
+      "reason": "DropdownMenuSubTrigger is never used in the app, so there is no real usage to copy"
+    },
+    {
+      "component": "src/components/ui/dropdown-menu.tsx#DropdownMenuCheckboxItem",
+      "axis": "inset",
+      "value": true,
+      "reason": "DropdownMenuCheckboxItem is never used in the app, so there is no real usage to copy"
+    },
+    {
+      "component": "src/components/ui/dropdown-menu.tsx#DropdownMenuRadioItem",
+      "axis": "inset",
+      "value": true,
+      "reason": "DropdownMenuRadioItem is never used in the app, so there is no real usage to copy"
+    },
+    {
+      "component": "src/components/ui/input-group.tsx#InputGroupButton",
+      "axis": "size",
+      "value": "xs",
+      "reason": "InputGroupButton is never used in the app, so there is no real usage to copy"
+    },
+    {
+      "component": "src/components/ui/input-group.tsx#InputGroupButton",
+      "axis": "size",
+      "value": "sm",
+      "reason": "InputGroupButton is never used in the app, so there is no real usage to copy"
+    },
+    {
+      "component": "src/components/ui/input-group.tsx#InputGroupButton",
+      "axis": "size",
+      "value": "icon-xs",
+      "reason": "InputGroupButton is never used in the app, so there is no real usage to copy"
+    },
+    {
+      "component": "src/components/ui/input-group.tsx#InputGroupButton",
+      "axis": "size",
+      "value": "icon-sm",
+      "reason": "InputGroupButton is never used in the app, so there is no real usage to copy"
+    },
+    {
+      "component": "src/components/ui/input-group.tsx#InputGroupButton",
+      "axis": "type",
+      "value": "button",
+      "reason": "InputGroupButton is never used in the app, so there is no real usage to copy"
+    },
+    {
+      "component": "src/components/ui/input-group.tsx#InputGroupButton",
+      "axis": "type",
+      "value": "submit",
+      "reason": "InputGroupButton is never used in the app, so there is no real usage to copy"
+    },
+    {
+      "component": "src/components/ui/input-group.tsx#InputGroupButton",
+      "axis": "type",
+      "value": "reset",
+      "reason": "InputGroupButton is never used in the app, so there is no real usage to copy"
+    }
+  ],
+  "nextSteps": [
+    {
+      "title": "Audit buttons",
+      "reason": "11 of 13 Button call sites restyle it with className, 9 of them to rounded-full; 3 of 6 variants and 5 of 11 sizes are never used; song-card.tsx has 1 hand-rolled <button>.",
+      "prompt": "/lunagraph:audit buttons"
+    },
+    {
+      "title": "Audit controls",
+      "reason": "Toggle and Slider are restyled at every call site (2 of 2 each); Toggle uses 1 of 2 variants and 1 of 3 sizes.",
+      "prompt": "/lunagraph:audit controls"
+    },
+    {
+      "title": "Audit tabs",
+      "reason": "Tabs, TabsList and TabsTrigger are each restyled at their only call site in playlist-view.tsx; TabsList variant=\"line\" is never used.",
+      "prompt": "/lunagraph:audit tabs"
+    }
+  ],
+  "coverage": {
+    "checkedAt": "2026-10-08T14:34:37.119Z",
+    "entries": {
+      "shown": 13,
+      "of": 13
+    },
+    "components": {
+      "required": 13,
+      "shown": 13,
+      "omitted": 0
+    },
+    "variants": {
+      "required": 36,
+      "shown": 36,
+      "skipped": 11
+    },
+    "parts": {
+      "used": 18,
+      "shown": 18,
+      "unused": 18
+    },
+    "handRolled": {
+      "required": 0,
+      "shown": 0,
+      "omitted": 0
+    },
+    "listedOnly": {
+      "localVersions": 0,
+      "handRolledLooks": 1,
+      "handRolledElements": 1
+    },
+    "overrides": {
+      "sites": 26,
+      "uses": 54,
+      "components": 9,
+      "patterns": 21
+    },
+    "sources": {
+      "specimens": 21,
+      "traced": 21
+    },
+    "gaps": 0
+  }
+}
